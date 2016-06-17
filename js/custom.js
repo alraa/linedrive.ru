@@ -73,7 +73,7 @@ $(function(){
 		 return false;
 	 });
     
-   //drop seardc; 
+   //drop search; 
     $('.js-open-search').focus(function(){
 		$(this).parents('.box-search').find('.drop-search').slideDown(); 
 		return false;
@@ -82,7 +82,14 @@ $(function(){
 		$(this).parents('.box-search').find('.drop-search').slideUp(); 
 		return false;
 	});
-
+    
+    
+    //open search mobile; 
+    $('.js-open-mobile-search').click(function(){
+		$(this).parents('header').find('.box-search').slideToggle(); 
+		return false;
+	});
+    
 });
 
 

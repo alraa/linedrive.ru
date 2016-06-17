@@ -313,7 +313,7 @@ header{
 	border: 1px solid #e2e5e7;
 	height: 43px; width: 100%;
 	text-align: center;
-	padding:1px 0 0 0;
+	padding:0px 0 0 0;
 	border-left: none;
 }
 .btn-search__icon{
@@ -323,6 +323,27 @@ header{
 	width:22px;height:22px;
 }
 .btn-search:hover .btn-search__icon{ opacity: 0.8;}
+
+
+.btn-open-search{
+	background: none;
+	height: 43px; width: 43px;
+	text-align: center;
+	padding:10px 0 0 0;
+	border-left: none;
+    float: right;
+    margin-top: 7px;
+    margin-right: 10px;
+    position: absolute;
+    left: -9999px;
+}
+.btn-open-search__icon{
+	display: block;
+	margin: 0 auto;
+	background:url(../img/sprite.png) no-repeat left -22px;
+	width:22px;height:22px;
+}
+.btn-open-search:hover .btn-open-search__icon{ opacity: 0.8;}
 
 .header-right{
 	float: right;
@@ -1282,27 +1303,42 @@ footer{
 }
 @media screen and (max-width: 767px){
 	.header-right{
-		float: none;
-		width: 100%;
-		clear: both;
-		padding-top: 15px;
-		text-align: center;
-	}
+        width: auto;
+        padding-right: 0px;
+    }
 	.logo{
 		width: 150px;
 		padding-top: 6px;
 	}
-	.box-search{
+	
+    .btn-open-search{ position: relative; left: 0px;}
+    .box-search{
 		margin-right: 0px;
 		padding-right: 0px;
-		margin-left: -150px;
-		padding-left: 165px;
-	}
+		margin-left: 0px;
+		padding-left: 0px;
+        background: #ffffff;
+        float: none;
+        top:115px; 
+        left: 0px;
+        position: absolute;
+        width: 100%;  
+        display: none;
+	}    
+    .btn-search{ width: 50px;}
+    .btn-search__icon{ }
+    .input-group{ }
+    
 	.header-top{ padding-top: 15px; padding-bottom: 15px; background: #FFF;}
 	.basket{
-		width: 105px;
+		width:auto;
 		text-align: left;
+        position: absolute;
+        right: 125px; top:65px;
+        border: none;
 	}
+    .basket__text{ display: none;}
+    .basket__icon{ background-position: -40px -22px;}
 	.box-tel{
 		width: 185px;
 	}
@@ -1324,6 +1360,8 @@ footer{
     .dropdown-navbar__columns:before{ left: 50%;}
     .dropdown-navbar__columns:after{ display: none;}
     .product-catalog{ display: none;}
+    
+    .line-links{ display: none;}
     
 }
 @media screen and (max-width: 660px){
@@ -1374,6 +1412,9 @@ footer{
 @media screen and (max-width: 440px){
     .list-drop-search__img{ display: none;}
     .list-drop-search__info{ display: block; margin-left: 0px; padding-left: 0px;}
+    
+    .box-tel{ width: auto;}
+    .tel-number{ font-size: 14px;}
 }
 
 

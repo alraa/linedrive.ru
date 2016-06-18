@@ -103,7 +103,8 @@ $(function(){
 	});
     
     //styler form; 
-    $('.js-styled').styler();
+    $('.js-styled').styler();	
+    
     
 });
 

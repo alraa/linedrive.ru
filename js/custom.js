@@ -88,8 +88,22 @@ $(function(){
     $('.js-open-mobile-search').click(function(){
 		$(this).parents('header').find('.box-search').fadeToggle();
         $('body').toggleClass('for-open-search');
+        $('.navbar-collapse').removeClass('in');
 		return false;
 	});
+     
+    
+    //open faq; 
+    $('.list-faq__link').click(function(){
+		$(this).parent().find('.list-faq__answer').slideToggle();
+        $(this).parent().toggleClass('active');
+        $(this).parent().siblings().find('.list-faq__answer').slideUp();
+        $(this).parent().siblings().removeClass('active')
+		return false;
+	});
+    
+    //styler form; 
+    $('.js-styled').styler();
     
 });
 
@@ -104,11 +118,11 @@ var handler2 = function(){
 	var ww = viewport().width;
 	
 	if (ww <= 991) {
-		
+        var height_window = $(window).height();
+		$('.dropdown-navbar').css({'max-height':height_window-130});
+        $('.navbar-collapse').css({'max-height':height_window-130});
+        $('.drop-search').css({'max-height':height_window-185});
 	}
-    
-    var height_window = $(window).height();
-    $('.dropdown-navbar__main-cont').css({'max-height':height_window});
 	
 }
 $(window).bind('load', handler2);

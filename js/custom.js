@@ -124,7 +124,52 @@ var handler2 = function(){
         $('.navbar-collapse').css({'max-height':height_window-130});
         $('.drop-search').css({'max-height':height_window-185});
 	}
-	
+    
+    if (ww >= 768) {
+        var height_logo_provider = $('.logo-provider__td').width();
+		$('.logo-provider__td').css({'height':height_logo_provider});
+	}
+    
+    
+    $('#js-carusel').carouFredSel({
+		auto: false,
+		prev: '#prev1',
+		next: '#next1',
+        width: '100%',
+		align: "center",
+		mousewheel: true,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+		},
+        scroll: 1,
+		items: {
+            width: 154,
+            visible: {
+                min: 1,
+                max: 6
+            }
+        }
+	});
+    
+    $('.button-minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.button-plus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) + 1;
+        count = count > ($input.attr("maxlength")) ? ($input.attr("maxlength")) : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    
+    
 }
 $(window).bind('load', handler2);
 $(window).bind('resize', handler2);

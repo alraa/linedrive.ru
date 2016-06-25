@@ -5,13 +5,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-	<title>LineDrive - Корзина</title>
+	<title>LineDrive - GFX4</title>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body class="loaded" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<body class="loaded without-filter" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 
 
 	<!-- BEGIN BODY -->
@@ -299,7 +299,9 @@
 		</header>
 
 		<!-- HEADER EOF   -->
-
+        <a href="#" class="button-open-filter">
+            <span class="button-open-filter__triangle"></span>
+        </a> 
 		<!-- BEGIN CONTENT -->
 
 		<main class="content">
@@ -309,7 +311,16 @@
                         <li class="bread-crambs__item">
                             <a href="#" class="bread-crambs__link">Главная</a>
                         </li>
-                        <li class="bread-crambs__item">Корзина</li>
+                        <li class="bread-crambs__item">
+                            <a href="#" class="bread-crambs__link">Каталог</a>
+                        </li>
+                        <li class="bread-crambs__item">
+                            <a href="#" class="bread-crambs__link">Компоненты для автоматизации</a>
+                        </li>
+                        <li class="bread-crambs__item">
+                            <a href="#" class="bread-crambs__link">Регуляторы мощности</a>
+                        </li>
+                        <li class="bread-crambs__item">GFX4</li>
                     </ul>
 					<div class="line-links__item first">
 						<a href="#"><span class="line-links__text">Вопросы-ответы</span></a>
@@ -321,176 +332,263 @@
 			</div>
 			
             <div class="container-fluid">
-                <h1 class="main-title">Корзина</h1>
-                <div class="box-provider">
-                    <div class="scroll-basket">
-                        <ul class="table-basket">
-                            <li class="tr">
-                                <div class="th col1">
-                                    Наименование:
-                                </div>
-                                <div class="th col2">
-                                    Цена:
-                                </div>
-                                <div class="th col3">
-                                    Кол-во:
-                                </div>
-                                <div class="th col4">
-                                    Сумма:
-                                </div>
-                                <div class="th col5">
-
-                                </div>
-                            </li>
-                            <li class="tr">
-                                <div class="td col1 text-left">
-                                    <a href="#" class="table-basket__img">
-                                        <img src="img/img_product_basket.jpg" alt="">
-                                    </a>
-                                    <div class="table-basket__info">
-                                        <a href="#" class="table-basket__title">Контроллеры – Программаторы </a> 
-                                        <p class="table-basket__article">SL76(80)-VDA268</p>
-                                    </div>
-                                </div>
-                                <div class="td col2">
-                                    <span class="table-basket__price empty">по запросу</span>
-                                </div>
-                                <div class="td col3">
-                                    <form class="field-number">
-                                        <a href="#" class="button-minus"></a>
-                                        <input class="field-number__input"  type="text"  name="number" value="1" onFocus="if(this.value=='1'){this.value=''}" onBlur="if(this.value==''){this.value='1'}">
-                                        <a href="#" class="button-plus"></a>
-                                        <label class="field-number__label">шт.</label>
-                                    </form>
-                                </div>
-                                <div class="td col4">
-                                    <span class="table-basket__price empty">по запросу</span>
-                                </div>
-                                <div class="td col5">
-                                    <a href="#" class="table-basket__delete"></a>
+                <h1 class="main-title main-title_with-buttons">SL76(80)-VDA268</h1>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+                        <div class="box-img-product">
+                            <div class="big-img-product">
+                                <img src="img/big_img_product_1.jpg" alt="">
+                                <a href="#" class="list-product-tile__play"></a>
+                            </div>
+                            <ul class="list-mini-img">
+                                <li class="list-mini-img__item"><a href="#" data-big="img/big_img_product_1.jpg"><img src="img/mini_img_product_1.jpg" alt=""></a></li>
+                                <li class="list-mini-img__item"><a href="#" data-big="img/big_img_product_2.jpg"><img src="img/mini_img_product_2.jpg" alt=""></a></li>
+                                <li class="list-mini-img__item"><a href="#" data-big="img/big_img_product_1.jpg"><img src="img/mini_img_product_1.jpg" alt=""></a></li>
+                                <li class="list-mini-img__item"><a href="#" data-big="img/big_img_product_2.jpg"><img src="img/mini_img_product_2.jpg" alt=""></a></li>
+                                <li class="list-mini-img__item"><a href="#" data-big="img/big_img_product_1.jpg"><img src="img/mini_img_product_1.jpg" alt=""></a></li>
+                                <li class="list-mini-img__item"><a href="#" data-big="img/big_img_product_2.jpg"><img src="img/mini_img_product_1.jpg" alt=""></a></li>
+                                <li class="list-mini-img__item"><a href="#" data-big="img/big_img_product_2.jpg"><img src="img/mini_img_product_1.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <ul class="list-sub-info-product">
+                            <li class="list-sub-info-product__item">
+                                <p class="list-sub-info-product__label">Производитель:</p>
+                                <div class="list-sub-info-product__right">
+                                    <span class="list-sub-info-product__logo">
+                                        <img src="img/logo_catalog.png" alt="">
+                                    </span>
                                 </div>
                             </li>
-                            <li class="tr">
-                                <div class="td col1 text-left">
-                                    <a href="#" class="table-basket__img">
-                                        <img src="img/img_product_basket.jpg" alt="">
+                            <li class="list-sub-info-product__item">
+                                <p class="list-sub-info-product__label">Сертификаты:</p>
+                                <div class="list-sub-info-product__right">
+                                    <a href="#" class="list-sub-info-product__certificate">
+                                        <img src="img/icon_certificate_1.png" alt="">
                                     </a>
-                                    <div class="table-basket__info">
-                                        <a href="#" class="table-basket__title">Контроллеры – Программаторы </a> 
-                                        <p class="table-basket__article">SL76(80)-VDA268</p>
-                                    </div>
-                                </div>
-                                <div class="td col2">
-                                    <span class="table-basket__price">12 000 руб.</span>
-                                </div>
-                                <div class="td col3">
-                                    <form class="field-number">
-                                        <a href="#" class="button-minus"></a>
-                                        <input class="field-number__input"  type="text"  name="number" value="10" onFocus="if(this.value=='10'){this.value=''}" onBlur="if(this.value==''){this.value='10'}">
-                                        <a href="#" class="button-plus"></a>
-                                        <label class="field-number__label">шт.</label>
-                                    </form>
-                                </div>
-                                <div class="td col4">
-                                    <span class="table-basket__price">120 000 руб.</span>
-                                </div>
-                                <div class="td col5">
-                                    <a href="#" class="table-basket__delete"></a>
+                                    <a href="#" class="list-sub-info-product__certificate">
+                                        <img src="img/icon_certificate_2.png" alt="">
+                                    </a>
+                                    <a href="#" class="list-sub-info-product__certificate">
+                                        <img src="img/icon_certificate_3.png" alt="">
+                                    </a>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="total-basket">
-                        <p class="total-basket__text">Стоимость заказа с НДС: По запросу</p>
-                        <p class="total-basket__footnote">* Данное предложение не является Офертой.</p>
+                    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
+                        <form>
+                            <div class="box-main-info-product js-tabs">
+                                <ul class="list-tabs-product clearfix">
+                                    <li class="list-tabs-product__item js-tabs-item">
+                                        <a href="#tab3_1" class="list-tabs-product__link js-tabs-link">
+                                            <span class="list-tabs-product__name">Быстрый поиск кода заказа</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-tabs-product__item js-tabs-item active">
+                                        <a href="#tab3_2" class="list-tabs-product__link js-tabs-link">
+                                            <span class="list-tabs-product__name">Подбор кода заказа по параметрам</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content2">
+                                    <div class="js-tab-cont hide-tab" id="tab3_1">
+
+                                    </div>
+                                    <div class="js-tab-cont" id="tab3_2">
+                                    
+                                        <div class="box-field opt3">
+                                            <label class="box-field__label">Выберите тип документа</label>
+                                            <div class="box-field__input">
+                                                <div class="select mini">
+                                                    <select class="js-styled">	
+                                                        <option>4x16A (максимум 30kW)</option>
+                                                        <option>4x16A (максимум 30kW)2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-field opt3">
+                                            <label class="box-field__label">Дополнительные выходы</label>
+                                            <div class="box-field__input">
+                                                <div class="select mini">
+                                                    <select class="js-styled">	
+                                                        <option>Дискретный</option>
+                                                        <option>Дискретный2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-field opt3">
+                                            <label class="box-field__label">Дополнительные входы</label>
+                                            <div class="box-field__input">
+                                                <div class="select mini">
+                                                    <select class="js-styled">	
+                                                        <option>4 линейных входа</option>
+                                                        <option>4 линейных входа2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-field opt3">
+                                            <label class="box-field__label">Предохранители (встроенные)</label>
+                                            <div class="box-field__input">
+                                                <div class="select mini">
+                                                    <select class="js-styled">	
+                                                        <option>4 держателя + 4 предохранителя</option>
+                                                        <option>4 держателя</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-field opt3">
+                                            <label class="box-field__label">Цифровая связь (порт 2)</label>
+                                            <div class="box-field__input">
+                                                <div class="select mini">
+                                                    <select class="js-styled">	
+                                                        <option>Только базовый Modbus RTU</option>
+                                                        <option>Только базовый Modbus RTU2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>                                    
+                                        <div class="box-footnote">
+                                            <span class="box-footnote__icon">*</span>
+                                            Для входа потенциометра необходимо 10V питание. <br>Для входа PTC необходима специальная калибровка.
+                                        </div>
+                                        <div class="box-field opt4">
+                                            <label class="box-field__label big">Код заказа:</label>
+                                            <div class="box-field__input">
+                                                <input type="text" class="form-control mini" value="TC5-V-2-J-5-Q-J-P-3-XT088 020A000X00">
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line-numpers-pruduct clearfix">
+                                <div class="line-numpers-pruduct__left">
+                                    <div class="info-numpers-pruduct">
+                                        <span class="info-numpers-pruduct__icon"></span>
+                                        <div class="info-numpers-pruduct__info">
+                                            <span class="info-numpers-pruduct__title">На складе более 5 шт.</span>
+                                            Наличие указано на 11.04.2016 16:01
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line-numpers-pruduct__right">
+                                    <p class="line-numpers-pruduct__label">Количество:</p>
+                                    <div class="field-number">
+                                        <a href="#" class="button-minus"></a>
+                                        <input class="field-number__input"  type="text"  name="number" value="1000" onFocus="if(this.value=='1000'){this.value=''}" onBlur="if(this.value==''){this.value='1000'}">
+                                        <a href="#" class="button-plus"></a>
+                                        <label class="field-number__label">шт.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line-button-order row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <p class="line-button-order__price">Цена с НДС: <span>цена по запросу</span></p>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <button class="btn btn-large btn-default btn_right">Сделать запрос</button>
+                                </div>
+                            </div>
+                            <p class="form-footnote">* Данные цены являются ориентировочными и указаны исключительно для информационных целей.</p>
+                        </form>
+                        <div class="box-with-social">
+                            <p class="box-with-social__label">Поделиться:</p>
+                            <ul class="list-soc">
+                                <li class="list-soc__item">
+                                    <a href="#"><img src="img/icon_soc_1.jpg" alt=""></a>
+                                </li>
+                                <li class="list-soc__item">
+                                    <a href="#"><img src="img/icon_soc_2.jpg" alt=""></a>
+                                </li>
+                                <li class="list-soc__item">
+                                    <a href="#"><img src="img/icon_soc_3.jpg" alt=""></a>
+                                </li>
+                                <li class="list-soc__item">
+                                    <a href="#"><img src="img/icon_soc_4.jpg" alt=""></a>
+                                </li>
+                                <li class="list-soc__item">
+                                    <a href="#"><img src="img/icon_soc_5.jpg" alt=""></a>
+                                </li>
+                                <li class="list-soc__item">
+                                    <a href="#"><img src="img/icon_soc_6.jpg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <form class="form-basket">
-                    <section class="form-basket__section">
-                        <h3 class="form-basket__title">Способ доставки</h3>
-                        <div class="form-basket__section-content">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w1 top">Выберите способ получения товара</label>
-                                        <div class="box-field__input w1">
-                                            <div class="select">
-                                                <select class="js-styled">	
-                                                    <option>Самовывоз</option>
-                                                    <option>Самовывоз2</option>
-                                                </select>
-                                            </div>
+            </div>
+            
+            <div class="box-contacts js-tabs">
+                <div class="container-fluid z1">
+                    <ul class="list-tabs-contacts opt2 clearfix">
+                        <li class="list-tabs-contacts__item js-tabs-item  active">
+                            <a href="#tab4_1" class="list-tabs-contacts__link js-tabs-link">Характеристики</a>
+                        </li>
+                        <li class="list-tabs-contacts__item js-tabs-item ">
+                            <a href="#tab4_2" class="list-tabs-contacts__link js-tabs-link">Описанaие</a>
+                        </li>
+                        <li class="list-tabs-contacts__item js-tabs-item">
+                            <a href="#tab4_3" class="list-tabs-contacts__link js-tabs-link">Сопутствующие товары</a>
+                        </li>
+                    </ul>                    
+                </div>
+                <div class="tab-content with-pad clearfix">
+                    <div class="container-fluid">
+                        <div class="js-tab-cont" id="tab4_1">
+                            <div class="tab-cont-pad">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div class="box-files">
+                                            <p class="box-files__title">Инструкции:</p>
+                                            <a href="#" class="file-item">
+                                                <span class="file-item__icon"></span>
+                                                <span class="file-item__info">
+                                                    <span class="file-item__name">Руководство по SL76(80)-VDA268</span>
+                                                    <span class="file-item__size">(1.8 Mb)</span>
+                                                </span>
+                                            </a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w2  top">Комментарий:</label>
-                                        <div class="box-field__input w2">
-                                            <textarea class="form-control opt2" placeholder=""></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="form-basket__section">
-                        <h3 class="form-basket__title">Контактная информация</h3>
-                        <div class="form-basket__section-content">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w1">Название организации *</label>
-                                        <div class="box-field__input w1">
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w1">Контактное лицо *</label>
-                                        <div class="box-field__input w1">
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w2">Телефон *</label>
-                                        <div class="box-field__input w2">
-                                            <input type="tel" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w2">E-mail *</label>
-                                        <div class="box-field__input w2">
-                                            <input type="email" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="form__footnote">* Поля обязательны для заполнения</p>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w3">Прикрепить фаил:<span class="help">(реквизиты, фотографии продукции)</span></label>
-                                        <div class="box-field__input w3 text-right">
-                                            <div class="button-file">
-                                                Выбрать
-                                                <input type="file">
-                                            </div>
-                                        </div>
-                                        <div class="file-form-item">
-                                            Реквизиты компании «Фортенс»
-                                            <a href="#" class="file-form-item__delete"></a>
-                                        </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <ul class="list-characteristic">
+                                            <li class="list-characteristic__item">
+                                                Универсальный вход настраивается с лицевой панели 
+                                            </li>
+                                            <li class="list-characteristic__item">
+                                                Точность 0,2% полной шкалы 
+                                            </li>
+                                            <li class="list-characteristic__item">
+                                                Два выхода управления: реле, логика или аналоговый с функцией тепло / холод 
+                                            </li>
+                                            <li class="list-characteristic__item">
+                                                3 настраиваемых сигнализатора 
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <div class="line-button-form">
-                        <button class="btn btn-large btn-default btn_right">Отправить заказ</button>
+                        <div class="js-tab-cont hide-tab" id="tab4_2">
+                            <div class="text-description tab-cont-pad">
+                                <p>Микропроцессорный ПИД регулятор формата 48x48 (1/16 DIN) обеспечивает законченный интерфейс оператора. Защищен мембранной клавиатурой, что гарантирует уровень IP65 защиты лицевой панели. </p>
+                                <p>Имеет 4 клавиши, два зеленых светодиодных дисплея, каждый с 4 цифрами, 4 красных индикаторных светодиода для 4 логических или релейных выходов, и 3 светодиода которые программируются для индикации различных рабочих положений прибора. </p>
+                                <p>Основной вход для параметра процесса универсален, к нему может быть подключено несколько типов входных сигналов: термопары 3-х проводные термометры сопротивления PT100; термисторы PTC; линейные входы 0-50mV, 10-50mV, 2-10V, 0-10V, 0-20мА, 4-20мА; и потенциометры все с возможностью заказной линеаризации клавишами лицевой панели. </p>
+                                <p>Возможно активизировать коррекцию входа, используя линейную функцию, определенную посредством двух точек на ней. </p>
+                                <p>Тип входа выбирается с клавиш лицевой панели; внешние шунты не требуются.</p>
+                                <p>Возможен второй дополнительный изолированный аналоговый вход, который может быть также настроен как линейный вход (0-10V, 2-10V, 0-20мА / 4-20мА), для дистанционной уставки, потенциометра или трансформатора тока. Функция вспомогательного входа полностью конфигурируемая, включая возможность заказной линеаризации. </p>
+                                <p>Возможно формировать 2 изолированных цифровых входа для выбора до 4 локальных уставок; запуска, остановки, сброса и внутреннего таймера; автоматического/ручного, местного/дистанционного управления; сброса памяти сигнализаторов; функции захвата входа. Инструмент может иметь до 4 реле (3A/250V) или логических (12Vdc, 20мА) выходов и до 2 изолированных аналоговых выходов напряжения или тока. Функция каждого выхода полностью настраиваемая с лицевой панели. Доступные функции включают: управление выходом, сигнализатор выхода, таймер, цифровой вход повторения, ретрансляцию значений процесса, точки установки, отклонение, уставку сигнализатора, считывание данных от цифровой связи. Возможен дальнейший изолированный выход (10 или 24Vdc, 30мА макс.) для подключения внешних преобразователей или потенциометров. </p>
+                                <p>Интерфейс последовательной связи RS485 (RS232C совместимый) позволяет считывать или изменять любой параметр и управлять инструментом в диалоговом режиме (местное/дистанционное ручное/автоматическое управление, внутреннее управление таймером, прямое управление выходами). Протоколы: MODBUS RTU и CENCAL (Gefran). Дополнительные последовательные коммуникации - токовая петля, RS232 или RS485, протокол может быть выбран между Gefran (Cencal) и MODBUS. Их использование позволяет записать любые параметры прибора. Все процедуры программирования прибора облегчены группировкой параметров в функциональные блоки (CFG для параметров управления, Inp для входов, Out для выходов, и т.д.) и возможностью выбора упрощенного меню для входа в наиболее часто используемые параметры. </p>
+                                <p>Для дальнейшего упрощения настройки имеется набор программирования, предназначенный для компьютера на базе PC, который включает в себя программу настройки под Windows и необходимые кабели для подключения прибора (см. спецификацию, код 80021).</p>
+                            </div>
+                        </div>
+                        <div class="js-tab-cont hide-tab" id="tab4_3">
+                            
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="box-bottom-banner top box-with-shadow">
 				<div class="container-fluid">

@@ -5,13 +5,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-	<title>LineDrive - Корзина</title>
+	<title>LineDrive - Каталог</title>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body class="loaded" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<body class="loaded without-filter" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 
 
 	<!-- BEGIN BODY -->
@@ -299,7 +299,9 @@
 		</header>
 
 		<!-- HEADER EOF   -->
-
+        <a href="#" class="button-open-filter">
+            <span class="button-open-filter__triangle"></span>
+        </a> 
 		<!-- BEGIN CONTENT -->
 
 		<main class="content">
@@ -309,7 +311,13 @@
                         <li class="bread-crambs__item">
                             <a href="#" class="bread-crambs__link">Главная</a>
                         </li>
-                        <li class="bread-crambs__item">Корзина</li>
+                        <li class="bread-crambs__item">
+                            <a href="#" class="bread-crambs__link">Каталог</a>
+                        </li>
+                        <li class="bread-crambs__item">
+                            <a href="#" class="bread-crambs__link">Компоненты для автоматизации</a>
+                        </li>
+                        <li class="bread-crambs__item">Регуляторы мощности</li>
                     </ul>
 					<div class="line-links__item first">
 						<a href="#"><span class="line-links__text">Вопросы-ответы</span></a>
@@ -321,176 +329,298 @@
 			</div>
 			
             <div class="container-fluid">
-                <h1 class="main-title">Корзина</h1>
-                <div class="box-provider">
-                    <div class="scroll-basket">
-                        <ul class="table-basket">
-                            <li class="tr">
-                                <div class="th col1">
-                                    Наименование:
+                <h1 class="main-title main-title_with-buttons">Регуляторы мощности</h1>
+                <div class="buttons-view">
+                    <a href="#" class="buttons-view__item"></a>
+                    <a href="#" class="buttons-view__item item2 active"></a>
+                </div>
+                <div class="line-pagging">
+                    <div class="nav-page">
+                        <a href="#" class="nav-page__prev"></a>
+                        <ul class="list-nav-page">
+                            <li class="list-nav-page__item active"><a href="#" class="list-nav-page__link">1</a></li>
+                            <li class="list-nav-page__item"><a href="#" class="list-nav-page__link">2</a></li>
+                            <li class="list-nav-page__item"><a href="#" class="list-nav-page__link">3</a></li>
+                            <li class="list-nav-page__item">...</li>
+                            <li class="list-nav-page__item"><a href="#" class="list-nav-page__link">7</a></li>
+                            <li class="list-nav-page__item"><a href="#" class="list-nav-page__link">8</a></li>
+                            <li class="list-nav-page__item"><a href="#" class="list-nav-page__link">9</a></li>
+                        </ul>
+                        <a href="#" class="nav-page__next"></a>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <aside class="filter-catalog">
+                        <div class="filter-catalog__cont">
+                            <div class="filter-catalog__title">
+                               ВЫБОР ПО ПАРАМЕТРАМ
+                            </div>
+                            <ul class="list-filter">
+                                <li class="list-filter__item first-open open">
+                                    <a href="#" class="list-filter__link">Функциональные свойства</a>
+                                    <div class="list-filter__drop">
+                                        <ul class="list-check-box">
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">ПИД регулятор</span>
+                                                </label>
+                                            </li>
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">Управление моторизированными задвижками</span>
+                                                </label>
+                                            </li>
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">Настраиваемая уставка (температурный профиль)</span>
+                                                </label>
+                                            </li>
+                                            <li class="list-check-box__item disabled">
+                                                <label>
+                                                    <input type="checkbox" disabled name="name" class="js-styled">
+                                                    <span class="list-check-box__name">Подключение модулей расширения</span>
+                                                </label>
+                                            </li>
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">Тсоздание логических последовательностей (до 16 блоков)</span>
+                                                </label>
+                                            </li>
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">Встроенный таймер</span>
+                                                </label>
+                                            </li>
+                                            <li class="list-check-box__item disabled">
+                                                <label>
+                                                    <input type="checkbox" disabled name="name" class="js-styled">
+                                                    <span class="list-check-box__name">Дополнительный вход для тензодатчика/TC/RTD/ потенциометра/линейный</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-filter__item">
+                                    <a href="#" class="list-filter__link">Тип монтажа/размер лицевой панели</a>
+                                    <div class="list-filter__drop">
+                                        <ul class="list-check-box">
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">ПИД регулятор</span>
+                                                </label>
+                                            </li>
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">Управление моторизированными задвижками</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-filter__item">
+                                    <a href="#" class="list-filter__link">Количество выходов</a>
+                                    <div class="list-filter__drop">
+                                        <ul class="list-check-box">
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">ПИД регулятор</span>
+                                                </label>
+                                            </li>
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">Управление моторизированными задвижками</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-filter__item">
+                                    <a href="#" class="list-filter__link">Типы выходов</a>
+                                    <div class="list-filter__drop">
+                                        <ul class="list-check-box">
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">ПИД регулятор</span>
+                                                </label>
+                                            </li>
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">Управление моторизированными задвижками</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-filter__item">
+                                    <a href="#" class="list-filter__link">Опциональные входы</a>
+                                    <div class="list-filter__drop">
+                                        <ul class="list-check-box">
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">ПИД регулятор</span>
+                                                </label>
+                                            </li>
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">Управление моторизированными задвижками</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-filter__item">
+                                    <a href="#" class="list-filter__link">Питание</a>
+                                    <div class="list-filter__drop">
+                                        <ul class="list-check-box">
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">ПИД регулятор</span>
+                                                </label>
+                                            </li>
+                                            <li class="list-check-box__item">
+                                                <label>
+                                                    <input type="checkbox" name="name" class="js-styled">
+                                                    <span class="list-check-box__name">Управление моторизированными задвижками</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <div class="content-right">
+                        <ul class="list-product2">
+                            <li class="list-product2__item">
+                                <div class="list-product2__column left">
+                                    <a href="#" class="list-product2__img"><img alt="" src="img/img_product_7.png"></a> 
+                                    <a href="#" class="list-product2__logo"><img alt="" src="img/logo_product.png"></a>
                                 </div>
-                                <div class="th col2">
-                                    Цена:
+                                <div class="list-product2__column center">
+                                    <a href="#" class="list-product2__title">GFX4</a>
+                                    <p class="list-product2__text">Регулятор мощности на четыре независимые петли; компактный модуль, заключающий в себе различные технологические элементы, такие как: ПИД регулятор, твердотельные реле...</p>
                                 </div>
-                                <div class="th col3">
-                                    Кол-во:
-                                </div>
-                                <div class="th col4">
-                                    Сумма:
-                                </div>
-                                <div class="th col5">
-
+                                <div class="list-product2__column right">
+                                    <a href="#" class="btn btn-default btn-more">Подробнее</a> 
+                                    <a href="#" class="list-product2__link">Подбор кода</a>
                                 </div>
                             </li>
-                            <li class="tr">
-                                <div class="td col1 text-left">
-                                    <a href="#" class="table-basket__img">
-                                        <img src="img/img_product_basket.jpg" alt="">
-                                    </a>
-                                    <div class="table-basket__info">
-                                        <a href="#" class="table-basket__title">Контроллеры – Программаторы </a> 
-                                        <p class="table-basket__article">SL76(80)-VDA268</p>
-                                    </div>
+                            <li class="list-product2__item">
+                                <div class="list-product2__column left">
+                                    <a href="#" class="list-product2__img"><img alt="" src="img/img_product_7.png"></a> 
+                                    <a href="#" class="list-product2__logo"><img alt="" src="img/logo_product.png"></a>
                                 </div>
-                                <div class="td col2">
-                                    <span class="table-basket__price empty">по запросу</span>
+                                <div class="list-product2__column center">
+                                    <a href="#" class="list-product2__title">GFX4</a>
+                                    <p class="list-product2__text">Регулятор мощности на четыре независимые петли; компактный модуль, заключающий в себе различные технологические элементы, такие как: ПИД регулятор, твердотельные реле...</p>
                                 </div>
-                                <div class="td col3">
-                                    <form class="field-number">
-                                        <a href="#" class="button-minus"></a>
-                                        <input class="field-number__input"  type="text"  name="number" value="1" onFocus="if(this.value=='1'){this.value=''}" onBlur="if(this.value==''){this.value='1'}">
-                                        <a href="#" class="button-plus"></a>
-                                        <label class="field-number__label">шт.</label>
-                                    </form>
-                                </div>
-                                <div class="td col4">
-                                    <span class="table-basket__price empty">по запросу</span>
-                                </div>
-                                <div class="td col5">
-                                    <a href="#" class="table-basket__delete"></a>
+                                <div class="list-product2__column right">
+                                    <a href="#" class="btn btn-default btn-more">Подробнее</a> 
+                                    <a href="#" class="list-product2__link">Подбор кода</a>
                                 </div>
                             </li>
-                            <li class="tr">
-                                <div class="td col1 text-left">
-                                    <a href="#" class="table-basket__img">
-                                        <img src="img/img_product_basket.jpg" alt="">
-                                    </a>
-                                    <div class="table-basket__info">
-                                        <a href="#" class="table-basket__title">Контроллеры – Программаторы </a> 
-                                        <p class="table-basket__article">SL76(80)-VDA268</p>
-                                    </div>
+                            <li class="list-product2__item">
+                                <div class="list-product2__column left">
+                                    <a href="#" class="list-product2__img"><img alt="" src="img/img_product_7.png"></a> 
+                                    <a href="#" class="list-product2__logo"><img alt="" src="img/logo_product.png"></a>
                                 </div>
-                                <div class="td col2">
-                                    <span class="table-basket__price">12 000 руб.</span>
+                                <div class="list-product2__column center">
+                                    <a href="#" class="list-product2__title">GFX4</a>
+                                    <p class="list-product2__text">Регулятор мощности на четыре независимые петли; компактный модуль, заключающий в себе различные технологические элементы, такие как: ПИД регулятор, твердотельные реле...</p>
                                 </div>
-                                <div class="td col3">
-                                    <form class="field-number">
-                                        <a href="#" class="button-minus"></a>
-                                        <input class="field-number__input"  type="text"  name="number" value="10" onFocus="if(this.value=='10'){this.value=''}" onBlur="if(this.value==''){this.value='10'}">
-                                        <a href="#" class="button-plus"></a>
-                                        <label class="field-number__label">шт.</label>
-                                    </form>
+                                <div class="list-product2__column right">
+                                    <a href="#" class="btn btn-default btn-more">Подробнее</a> 
+                                    <a href="#" class="list-product2__link">Подбор кода</a>
                                 </div>
-                                <div class="td col4">
-                                    <span class="table-basket__price">120 000 руб.</span>
+                            </li>
+                            <li class="list-product2__item">
+                                <div class="list-product2__column left">
+                                    <a href="#" class="list-product2__img"><img alt="" src="img/img_product_7.png"></a> 
+                                    <a href="#" class="list-product2__logo"><img alt="" src="img/logo_product.png"></a>
                                 </div>
-                                <div class="td col5">
-                                    <a href="#" class="table-basket__delete"></a>
+                                <div class="list-product2__column center">
+                                    <a href="#" class="list-product2__title">GFX4</a>
+                                    <p class="list-product2__text">Регулятор мощности на четыре независимые петли; компактный модуль, заключающий в себе различные технологические элементы, такие как: ПИД регулятор, твердотельные реле...</p>
+                                </div>
+                                <div class="list-product2__column right">
+                                    <a href="#" class="btn btn-default btn-more">Подробнее</a> 
+                                    <a href="#" class="list-product2__link">Подбор кода</a>
+                                </div>
+                            </li>
+                            <li class="list-product2__item">
+                                <div class="list-product2__column left">
+                                    <a href="#" class="list-product2__img"><img alt="" src="img/img_product_7.png"></a> 
+                                    <a href="#" class="list-product2__logo"><img alt="" src="img/logo_product.png"></a>
+                                </div>
+                                <div class="list-product2__column center">
+                                    <a href="#" class="list-product2__title">GFX4</a>
+                                    <p class="list-product2__text">Регулятор мощности на четыре независимые петли; компактный модуль, заключающий в себе различные технологические элементы, такие как: ПИД регулятор, твердотельные реле...</p>
+                                </div>
+                                <div class="list-product2__column right">
+                                    <a href="#" class="btn btn-default btn-more">Подробнее</a> 
+                                    <a href="#" class="list-product2__link">Подбор кода</a>
+                                </div>
+                            </li>
+                            <li class="list-product2__item">
+                                <div class="list-product2__column left">
+                                    <a href="#" class="list-product2__img"><img alt="" src="img/img_product_7.png"></a> 
+                                    <a href="#" class="list-product2__logo"><img alt="" src="img/logo_product.png"></a>
+                                </div>
+                                <div class="list-product2__column center">
+                                    <a href="#" class="list-product2__title">GFX4</a>
+                                    <p class="list-product2__text">Регулятор мощности на четыре независимые петли; компактный модуль, заключающий в себе различные технологические элементы, такие как: ПИД регулятор, твердотельные реле...</p>
+                                </div>
+                                <div class="list-product2__column right">
+                                    <a href="#" class="btn btn-default btn-more">Подробнее</a> 
+                                    <a href="#" class="list-product2__link">Подбор кода</a>
+                                </div>
+                            </li>
+                            <li class="list-product2__item">
+                                <div class="list-product2__column left">
+                                    <a href="#" class="list-product2__img"><img alt="" src="img/img_product_7.png"></a> 
+                                    <a href="#" class="list-product2__logo"><img alt="" src="img/logo_product.png"></a>
+                                </div>
+                                <div class="list-product2__column center">
+                                    <a href="#" class="list-product2__title">GFX4</a>
+                                    <p class="list-product2__text">Регулятор мощности на четыре независимые петли; компактный модуль, заключающий в себе различные технологические элементы, такие как: ПИД регулятор, твердотельные реле...</p>
+                                </div>
+                                <div class="list-product2__column right">
+                                    <a href="#" class="btn btn-default btn-more">Подробнее</a> 
+                                    <a href="#" class="list-product2__link">Подбор кода</a>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="total-basket">
-                        <p class="total-basket__text">Стоимость заказа с НДС: По запросу</p>
-                        <p class="total-basket__footnote">* Данное предложение не является Офертой.</p>
+                </div>
+                <div class="line-pagging top">
+                    <div class="nav-page">
+                        <a href="#" class="nav-page__prev"></a>
+                        <ul class="list-nav-page">
+                            <li class="list-nav-page__item active"><a href="#" class="list-nav-page__link">1</a></li>
+                            <li class="list-nav-page__item"><a href="#" class="list-nav-page__link">2</a></li>
+                            <li class="list-nav-page__item"><a href="#" class="list-nav-page__link">3</a></li>
+                            <li class="list-nav-page__item">...</li>
+                            <li class="list-nav-page__item"><a href="#" class="list-nav-page__link">7</a></li>
+                            <li class="list-nav-page__item"><a href="#" class="list-nav-page__link">8</a></li>
+                            <li class="list-nav-page__item"><a href="#" class="list-nav-page__link">9</a></li>
+                        </ul>
+                        <a href="#" class="nav-page__next"></a>
                     </div>
                 </div>
-                <form class="form-basket">
-                    <section class="form-basket__section">
-                        <h3 class="form-basket__title">Способ доставки</h3>
-                        <div class="form-basket__section-content">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w1 top">Выберите способ получения товара</label>
-                                        <div class="box-field__input w1">
-                                            <div class="select">
-                                                <select class="js-styled">	
-                                                    <option>Самовывоз</option>
-                                                    <option>Самовывоз2</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w2  top">Комментарий:</label>
-                                        <div class="box-field__input w2">
-                                            <textarea class="form-control opt2" placeholder=""></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="form-basket__section">
-                        <h3 class="form-basket__title">Контактная информация</h3>
-                        <div class="form-basket__section-content">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w1">Название организации *</label>
-                                        <div class="box-field__input w1">
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w1">Контактное лицо *</label>
-                                        <div class="box-field__input w1">
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w2">Телефон *</label>
-                                        <div class="box-field__input w2">
-                                            <input type="tel" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w2">E-mail *</label>
-                                        <div class="box-field__input w2">
-                                            <input type="email" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="form__footnote">* Поля обязательны для заполнения</p>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="box-field opt2">
-                                        <label class="box-field__label w3">Прикрепить фаил:<span class="help">(реквизиты, фотографии продукции)</span></label>
-                                        <div class="box-field__input w3 text-right">
-                                            <div class="button-file">
-                                                Выбрать
-                                                <input type="file">
-                                            </div>
-                                        </div>
-                                        <div class="file-form-item">
-                                            Реквизиты компании «Фортенс»
-                                            <a href="#" class="file-form-item__delete"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="line-button-form">
-                        <button class="btn btn-large btn-default btn_right">Отправить заказ</button>
-                    </div>
-                </form>
             </div>
             <div class="box-bottom-banner top box-with-shadow">
 				<div class="container-fluid">

@@ -106,6 +106,45 @@ $(function(){
     $('.js-styled').styler();	
     
     
+    //open section filter; 
+    $('.list-filter__link').click(function(){
+		$(this).parent().find('.list-filter__drop').slideToggle();
+        $(this).parent().toggleClass('open');
+        $(this).parent().siblings().find('.list-filter__drop').slideUp();
+        $(this).parent().removeClass('first-open');
+        $(this).parent().siblings().removeClass('open')
+		return false;
+	});
+    
+    //open filter; 
+    $('.button-open-filter').click(function(){
+		$('body').toggleClass('for-open-filter');
+        $('body').toggleClass('without-filter');
+		return false;
+	});
+    $(document).click(function(e){
+		if ($(e.target).parents().filter('.filter-catalog:visible').length != 1) {
+			$('body').removeClass('for-open-filter');
+            $('body').addClass('without-filter');
+			
+		}
+	});
+    
+    //scroll Up; 
+    $('.button-up').click(function() {
+      $('html, body').animate({scrollTop: 0}, 1000);
+      return false;
+     });
+    
+    //card product img; 
+    $('.list-mini-img li a').click(function(){
+        srcBig=$(this).attr('data-big');
+        $(this).parents('.box-img-product').find('.big-img-product img').attr('src',srcBig);			
+		$(this).parents('.box-img-product').find('.miniImgCard li.active').removeClass('active');
+		$(this).parent().addClass('active');			
+        return false;
+    });
+    
 });
 
 
@@ -130,7 +169,7 @@ var handler2 = function(){
 		$('.logo-provider__td').css({'height':height_logo_provider});
 	}
     
-    
+    //carusel product; 
     $('#js-carusel').carouFredSel({
 		auto: false,
 		prev: '#prev1',
@@ -152,6 +191,8 @@ var handler2 = function(){
         }
 	});
     
+    
+    //field number product; 
     $('.button-minus').click(function () {
         var $input = $(this).parent().find('input');
         var count = parseInt($input.val()) - 1;
@@ -168,6 +209,10 @@ var handler2 = function(){
         $input.change();
         return false;
     });
+    
+    
+    var height_window2 = $(window).height();
+	$('.filter-catalog__cont').css({'max-height':height_window2});
     
     
 }

@@ -145,6 +145,26 @@ $(function(){
         return false;
     });
     
+    
+    if($('.fancybox').length){
+      $('.fancybox').fancybox({
+       padding  : 0,
+       margin  : 10,
+       fitToView:false,
+       maxWidth:'100%'
+      });
+     };
+    
+    if($('.fancybox2').length){
+      $('.fancybox2').fancybox({
+       padding  : 0,
+       margin  : 10,
+       fitToView:false,
+       maxWidth:'100%',
+  wrapCSS   : 'wrap-img-fancy'
+      });
+     };
+    
 });
 
 

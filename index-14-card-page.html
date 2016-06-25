@@ -95,7 +95,7 @@
 						</div>
 						<div class="box-tel text-right">
 							<div class="tel-number">+7 (495) 956-70-08</div>
-							<a href="#" class="call-me">Перезвоните мне</a>
+							<a href="#win_1" class="call-me fancybox">Перезвоните мне</a>
 						</div>
 					</div>
 				</div>
@@ -304,7 +304,7 @@
         </a> 
 		<!-- BEGIN CONTENT -->
 
-		<main class="content">
+		<main class="content box-card">
 			<div class="line-links">
 				<div class="container-fluid">
                     <ul class="bread-crambs">
@@ -362,10 +362,10 @@
                             <li class="list-sub-info-product__item">
                                 <p class="list-sub-info-product__label">Сертификаты:</p>
                                 <div class="list-sub-info-product__right">
-                                    <a href="#" class="list-sub-info-product__certificate">
+                                    <a href="img/img_fancy_1.jpg" class="list-sub-info-product__certificate fancybox2">
                                         <img src="img/icon_certificate_1.png" alt="">
                                     </a>
-                                    <a href="#" class="list-sub-info-product__certificate">
+                                    <a href="img/img_fancy_2.jpg" class="list-sub-info-product__certificate fancybox2">
                                         <img src="img/icon_certificate_2.png" alt="">
                                     </a>
                                     <a href="#" class="list-sub-info-product__certificate">
@@ -392,7 +392,22 @@
                                 </ul>
                                 <div class="tab-content2">
                                     <div class="js-tab-cont hide-tab" id="tab3_1">
-
+                                        <div class="line-field">
+                                            <div class="box-field opt4">
+                                                <label class="box-field__label">Введите код:</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control mini" value="GFX4-IR-XX-X-X-X-X">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line-field">
+                                            <div class="box-field opt4">
+                                                <label class="box-field__label">Код заказа:</label>
+                                                <div class="box-field__input">
+                                                    <input type="text" class="form-control mini" value="TC5-V-2-J-5-Q-J-P-3-XT088 020A000X00">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="js-tab-cont" id="tab3_2">
                                     
@@ -524,10 +539,10 @@
             <div class="box-contacts js-tabs">
                 <div class="container-fluid z1">
                     <ul class="list-tabs-contacts opt2 clearfix">
-                        <li class="list-tabs-contacts__item js-tabs-item  active">
+                        <li class="list-tabs-contacts__item js-tabs-item">
                             <a href="#tab4_1" class="list-tabs-contacts__link js-tabs-link">Характеристики</a>
                         </li>
-                        <li class="list-tabs-contacts__item js-tabs-item ">
+                        <li class="list-tabs-contacts__item js-tabs-item  active">
                             <a href="#tab4_2" class="list-tabs-contacts__link js-tabs-link">Описанaие</a>
                         </li>
                         <li class="list-tabs-contacts__item js-tabs-item">
@@ -537,8 +552,8 @@
                 </div>
                 <div class="tab-content with-pad clearfix">
                     <div class="container-fluid">
-                        <div class="js-tab-cont" id="tab4_1">
-                            <div class="tab-cont-pad">
+                        <div class="js-tab-cont  hide-tab" id="tab4_1">
+                            <div class="tab-cont-pad opt2">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                         <div class="box-files">
@@ -564,14 +579,32 @@
                                                 Два выхода управления: реле, логика или аналоговый с функцией тепло / холод 
                                             </li>
                                             <li class="list-characteristic__item">
-                                                3 настраиваемых сигнализатора 
+                                                3 настраиваемых сигнализатора  
+                                            </li>
+                                            <li class="list-characteristic__item">
+                                                2 аналоговых выхода 
+                                            </li>
+                                            <li class="list-characteristic__item">
+                                                2 цифровых порта с настраиваемой функцией 
+                                            </li>
+                                            <li class="list-characteristic__item">
+                                                Дополнительный вход для трансформатора тока или дистанционной уставки 
+                                            </li>
+                                            <li class="list-characteristic__item">
+                                                Сигнализатор прерывателя нагревателя или короткого замыкания пробника 
+                                            </li>
+                                            <li class="list-characteristic__item">
+                                                Самонастройка, плавный пуск, автонастройка, ручной/авто режим, ударопонижение, уставка, локальное/дистанционное управление 
+                                            </li>
+                                            <li class="list-characteristic__item">
+                                                Функция мультинабора, пилообразный сигнал, таймер
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="js-tab-cont hide-tab" id="tab4_2">
+                        <div class="js-tab-cont" id="tab4_2">
                             <div class="text-description tab-cont-pad">
                                 <p>Микропроцессорный ПИД регулятор формата 48x48 (1/16 DIN) обеспечивает законченный интерфейс оператора. Защищен мембранной клавиатурой, что гарантирует уровень IP65 защиты лицевой панели. </p>
                                 <p>Имеет 4 клавиши, два зеленых светодиодных дисплея, каждый с 4 цифрами, 4 красных индикаторных светодиода для 4 логических или релейных выходов, и 3 светодиода которые программируются для индикации различных рабочих положений прибора. </p>
@@ -585,12 +618,111 @@
                             </div>
                         </div>
                         <div class="js-tab-cont hide-tab" id="tab4_3">
-                            
+                            <ul class="accompanying-product">
+                                <li class="accompanying-product__item">
+                                    <a href="#" class="accompanying-product__img">
+                                        <img alt="" src="img/img_accompanying_product_1.png" >
+                                    </a>
+                                    <a href="#" class="accompanying-product__title">GFXTERMO4</a>
+                                    <p class="accompanying-product__text">ПИД регулятор для управления 4 зонами полностью независимым способом. Настройка входов-выходов быстрая и </p>
+                                </li>
+                                <li class="accompanying-product__item">
+                                    <a href="#" class="accompanying-product__img">
+                                        <img alt="" src="img/img_accompanying_product_2.png" >
+                                    </a>
+                                    <a href="#" class="accompanying-product__title">GFW</a>
+                                    <p class="accompanying-product__text">Заключает в себе ПИД регулятор и 1/2/3х -фазное реле, функции модульного, компактного, оптимизированного под </p>
+                                </li>
+                                <li class="accompanying-product__item">
+                                    <a href="#" class="accompanying-product__img">
+                                        <img alt="" src="img/img_accompanying_product_3.png" >
+                                    </a>
+                                    <a href="#" class="accompanying-product__title">556</a>
+                                    <p class="accompanying-product__text">Модель 556 настраивается для большого количества функций и предназначена для безотказной работы в промышленном</p>
+                                </li>
+                                <li class="accompanying-product__item">
+                                    <a href="#" class="accompanying-product__img">
+                                        <img alt="" src="img/img_accompanying_product_4.png" >
+                                    </a>
+                                    <a href="#" class="accompanying-product__title">R-SW5</a>
+                                    <p class="accompanying-product__text">R-SW5 - модуль коммутации с 4+1 портами Fast Ethernet (100 Mbps), позволяющими расширить GDnet для древовидного соединения</p>
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-default btn-read-more2"><span class="btn-read-more2__name">Показать все</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="box-bottom-banner top box-with-shadow">
+            <div class="box-carusel-product box-with-shadow">
+				<div class="container-fluid">
+				    <h5 class="sub-title2">История просмотров</h5>
+                    <div class="box-gallery-product without-border">
+                        <a href="#" class="prev-gallery" id="prev1"></a>
+                        <ul class="list-product-gal" id="js-carusel">
+                            <li class="list-product-gal__item">
+                                <a href="#" class="list-product-gal__item-cont">
+                                    <span class="list-product-gal__img">
+                                        <img alt="" src="img/img_product_1.png">
+                                    </span>
+                                    <span class="list-product-gal__name">GFX4-IR</span>
+                                </a>
+                            </li>
+                            <li class="list-product-gal__item">
+                                <a href="#" class="list-product-gal__item-cont">
+                                    <span class="list-product-gal__img">
+                                        <img alt="" src="img/img_product_2.png">
+                                    </span>
+                                    <span class="list-product-gal__name">4T48</span>
+                                </a>
+                            </li>
+                            <li class="list-product-gal__item">
+                                <a href="#" class="list-product-gal__item-cont">
+                                    <span class="list-product-gal__img">
+                                        <img alt="" src="img/img_product_3.png">
+                                    </span>
+                                    <span class="list-product-gal__name">TLB</span>
+                                </a>
+                            </li>
+                            <li class="list-product-gal__item">
+                                <a href="#" class="list-product-gal__item-cont">
+                                    <span class="list-product-gal__img">
+                                        <img alt="" src="img/img_product_4.png">
+                                    </span>
+                                    <span class="list-product-gal__name">SL76(80)-VDA268</span>
+                                </a>
+                            </li>
+                            <li class="list-product-gal__item">
+                                <a href="#" class="list-product-gal__item-cont">
+                                    <span class="list-product-gal__img">
+                                        <img alt="" src="img/img_product_5.png">
+                                    </span>
+                                    <span class="list-product-gal__name">GFX4</span>
+                                </a>
+                            </li>
+                            <li class="list-product-gal__item">
+                                <a href="#" class="list-product-gal__item-cont">
+                                    <span class="list-product-gal__img">
+                                        <img alt="" src="img/img_product_6.png">
+                                    </span>
+                                    <span class="list-product-gal__name">GFXTERMO4</span>
+                                </a>
+                            </li>
+                            <li class="list-product-gal__item">
+                                <a href="#" class="list-product-gal__item-cont">
+                                    <span class="list-product-gal__img">
+                                        <img alt="" src="img/img_product_5.png">
+                                    </span>
+                                    <span class="list-product-gal__name">SL76(80)-VDA268</span>
+                                </a>
+                            </li>                            
+                        </ul>
+                        <a href="#" class="next-gallery" id="next1"></a>
+                    </div>
+				</div>
+			</div>
+            <div class="box-bottom-banner box-with-shadow">
 				<div class="container-fluid">
 					<div class="banner"><a href="#"><img src="img/banner.jpg" alt=""></a></div>
 				</div>
@@ -672,6 +804,51 @@
 		</footer>
 
 		<!-- FOOTER EOF   -->
+        
+        <div class="popup">
+			<div class="window-open" id="win_1">
+				<div class="window-open__cont">
+					<div class="window-open__title">Обратный звонок</div>
+					<div class="window-open__text">Укажите свои персональные данные и наши специалисты свяжутся с вами в ближайшее время</div>
+					<form class="form-window">
+						<div class="box-field">                            
+                            <div class="box-field__input box-field__input_block">
+                                <input type="text" class="form-control" placeholder="Ваше имя *">
+                            </div>
+                        </div>
+                        <div class="box-field">                            
+                            <div class="box-field__input box-field__input_block">
+                                <input type="tel" class="form-control" placeholder="Телефон *">
+                            </div>
+                        </div>
+                        <div class="box-field">                            
+                            <div class="box-field__input box-field__input_block">
+                                <input type="text" class="form-control" placeholder="Название организации * ">
+                            </div>
+                        </div>
+                        <div class="box-field">                            
+                            <div class="box-field__input box-field__input_block">
+                                <textarea class="form-control" placeholder="Тема звонка"></textarea>
+                            </div>
+                        </div>
+                        <p class="form__footnote">* Поля обязательны для заполнения</p>
+                        <div class="line-botton-feedback line-botton-feedback_for-window">
+                                <label class="box-field__label">Код с картинки*</label>
+                                <div class="box-field__input">                                    
+                                    <div class="field-input-number">
+                                        <input type="text" class="form-control" placeholder="8935">
+                                    </div>
+                                    <div class="form-feedback__img">
+                                        <img src="img/img_text.jpg" alt="">
+                                    </div>
+                                </div>   
+                        </div>
+                        <button class="btn btn-large btn-default btn-block">Заказать звонок</button>                     
+					</form>
+				</div>
+			</div>
+		</div>
+        
 
 	</div>
 
@@ -685,6 +862,7 @@
 	<script type="text/javascript" src="js/bxslider.min.js"></script>
     <script type="text/javascript" src="js/jquery.formstyler.js"></script>
     <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
 </body>
 
